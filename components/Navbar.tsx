@@ -30,11 +30,6 @@ export default function Navbar() {
     return () => window.removeEventListener('scroll', onScroll)
   }, [])
 
-  // Close menu on route change
-  useEffect(() => {
-    setMenuOpen(false)
-  }, [])
-
   return (
     <>
       <nav style={{
